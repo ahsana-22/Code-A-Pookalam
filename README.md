@@ -23,8 +23,7 @@ HTML only (no CSS frameworks, JS, etc.)
 
 ### Video explaining How you build the pookalam
 
-
-
+https://github.com/user-attachments/assets/2f9b4d9b-11ce-419e-a4d9-92f6e2de72ea
 
 ### Screenshots
 
