@@ -10,23 +10,25 @@ Welcome to CODE-A-പൂക്കളം, a creative coding challenge scheduled f
 
 
 ### Hosted Pookalam Link
-
+https://code-a-pookalam-five.vercel.app/
 
 
 ### Pookalam Description
-Brief description about your pookalam. What makes it special and different.
+This Pookalam is created using only emojis and basic HTML elements. The design reflects traditional flower arrangements seen during Onam.
 
 
 
 ### Technologies Used 
-
+HTML only (no CSS frameworks, JS, etc.)
 
 ### Video explaining How you build the pookalam
 
 
 
+
 ### Screenshots
 
+<img width="1920" height="961" alt="ahsana-22_Code-A-Pookalam - Google Chrome 05-09-2025 01_17_52" src="https://github.com/user-attachments/assets/e00d8ee0-9084-443f-9c02-a5e2a0ab8052" />
 
 
 Happy Onam ! <br>
