@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Pookkalam</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f8f3e7;
+      overflow: hidden;
+      font-size: 28px; /* size of flowers */
+    }
+
+    .ring {
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flower {
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div id="pookkalam"></div>
+
+  <script>
+    const pookkalam = document.getElementById("pookkalam");
+
+    // Different flower emojis
+    const flowers = ["🌸", "🌼", "🌺","🏵️","🪷","🍁"];
+
+    // Function to make a ring of flowers
+    function createRing(radius, count, emoji) {
+      const ring = document.createElement("div");
+      ring.className = "ring";
+
+      for (let i = 0; i < count; i++) {
+        const flower = document.createElement("div");
+        flower.className = "flower";
+        flower.textContent = emoji;
+
+        const angle = (i * 2 * Math.PI) / count;
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+
+        flower.style.left = `${x}px`;
+        flower.style.top = `${y}px`;
+
+        ring.appendChild(flower);
+      }
+      pookkalam.appendChild(ring);
+    }
+
+    // Build concentric emoji rings
+    createRing(300, 100, "🪷");
+    createRing(275,88,"🍁");
+    createRing(250, 78, "🌸");
+    createRing(220,68,"🏵️");
+    createRing(180, 58, "🌼");
+    createRing(150,48 , "🪷");
+    createRing(110, 48, "🌺");
+    createRing(80, 24, "🌼");
+    createRing(50, 12, "🌸");
+    createRing(20, 6, "🏵️");
+    createRing(0, 1, "🪷");
+    
+
+
+    // Center flower 🏵️
+    const center = document.createElement("div");
+    center.className = "flower";
+    center.textContent = "🏵️";  // changed center flower
+    center.style.left = "0px";
+    center.style.top = "0px";
+    pookkalam.appendChild(center);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
